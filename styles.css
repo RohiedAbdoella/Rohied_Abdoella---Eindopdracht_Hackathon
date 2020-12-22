@@ -1,0 +1,273 @@
+.container {
+    height: 520px;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(12 , 1fr); 
+    grid-template-rows: repeat(4 , 1fr);
+    grid-template-areas:    
+                    "h h h h h h h h h h h h"
+                    "m m m m m m m m m m m m"
+                    "a a a a a a a a a a a a"
+                    "f f f f f f f f f f f f";                          
+    }
+
+.container2 {
+    height: 520px;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(12 , 1fr); 
+    grid-template-rows: repeat(4 , 1fr);
+    grid-template-areas:    
+                    "h h h h h h h h h h h h"
+                    "m m m m m m m m m m m m"
+                    "a a a a a a a a a a a a"
+                    "f f f f f f f f f f f f";      
+    }
+
+header {
+    grid-area: h;
+    }
+
+main  {
+    grid-area: m;
+    }
+
+aside {
+    grid-area: a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    }
+
+.aside {
+    
+    grid-area: a;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    }    
+
+footer {
+    grid-area: f;
+    }
+
+.border1 {
+        border: 1px solid pink;
+        margin: 5px 10px;
+        padding: 20px;
+        }
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 10px;
+    background-image: url("sparkle3.gif");
+    background-color: black;
+    }
+
+header h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Calligraffitti', cursive;
+
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    font-family: fantasy;
+    font-size: 40px;
+    }
+
+.navlist li {
+        list-style-type: none;
+        margin: 10px;
+        padding: 10px;
+        display: inline;
+        }
+
+footer nav {
+    font-family: fantasy;
+    margin: 10px;
+    font-size: 20px;
+    }
+
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Pompiere', cursive;
+    font-size: 30px;
+    }
+
+h1 {
+    color: rgb(255, 192, 245);
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 40px;
+    }
+
+h2 {
+    color: rgb(255, 192, 245);
+    font-family: Verdana, Geneva;
+    font-size: 40px;
+    }    
+
+ul {
+    list-style-type: circle;
+    font-size:20px;
+    }
+
+p   {
+    font-size: 20px;
+    margin: 10px;
+    }
+
+footer h5 {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color:  rgb(255, 192, 245);
+    }
+
+form    {
+        display: block;
+        width: 600px;
+        margin: 10px;
+        }
+            
+@media (min-width: 1024px) {
+    
+    .container {
+        height: 100%;
+        grid-template-areas:    
+                        "h h h h h h h h h h h h"
+                        "m m m m m m m a a a a a"
+                        "m m m m m m m a a a a a"
+                        "f f f f f f f f f f f f"; 
+        }
+    
+    .container2 {
+        height: 520px;
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: repeat(12 , 1fr); 
+        grid-template-rows: repeat(4 , 1fr);
+        grid-template-areas:    
+                        "h h h h h h h h h h h h"
+                        "m m m m m m m m m m m m"
+                        "a a a a a a a a a a a a"
+                        "f f f f f f f f f f f f"; 
+        }
+        
+    form p{
+        font-size: 20px;
+        margin: 5px;
+        padding: 5px;
+        }
+    
+    header h1 {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    header h2 {
+        justify-content: flex-start;
+        }
+
+    header nav {
+        justify-content: flex-end;
+        padding: 5px;
+        }
+      
+    h2 {
+        font-size: 50px;
+        margin: 5px;
+        padding: 10px;
+        }
+
+    p   {
+        font-size: 25px;
+        line-height: 35px;
+        margin: 20px;
+        padding: 20px;
+        }
+    
+    footer h5 {
+        font-size: 20px;
+        }
+    }
+    
+    
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .container {
+        height: 520px;
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: repeat(12 , 1fr); 
+        grid-template-rows: repeat (4 , 1fr);
+        grid-template-areas:    
+                        "h h h h h h h h h h h h"
+                        "m m m m m m m m m m m m"
+                        "a a a a a a a a a a a a"
+                        "f f f f f f f f f f f f"; 
+        }
+
+    .container2 {
+        height: 520px;
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: repeat(12 , 1fr); 
+        grid-template-rows: repeat (4 , 1fr);
+        grid-template-areas:    
+                        "h h h h h h h h h h h h"
+                        "m m m m m m m m m m m m"
+                        "a a a a a a a a a a a a"
+                        "f f f f f f f f f f f f"; 
+        }
+    aside {
+        margin: 10px;
+        }
+        
+    header h1 {
+        display: flex;
+        flex-wrap: wrap;
+        }
+    
+    header h2 {
+        display: flex;
+        justify-content: flex-start;
+        }
+
+    header nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px;
+        }
+   
+    h2 {
+        font-size: 50px;
+        margin: 5px;
+        padding: 10px;
+        }
+
+    p   {
+        font-size: 25px;
+        line-height: 35px;
+        margin: 10px;
+        padding: 15px;
+        }
+    
+    footer h5 {
+        font-size: 20px;
+        }
+    
+    form p{
+        font-size: 20px;
+        margin: 5px;
+        padding: 3px;
+        }
+      
+    }
+    
+       
